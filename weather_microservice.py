@@ -11,7 +11,7 @@ def get_weather(api_key, location):
         'units': 'imperial'  # Can use 'metric' for Celsius temps if preferred.
     }
 
-    # Determines if the location is a zip code, removes spaces, checks if reamining characters are all valid digits (for zip code)
+    # Determines if the location is a city/zip code, removes spaces, checks if reamining characters are all valid digits (for zip code)
     if location.replace(" ", "").isdigit():
         # If it's a zip code, adds it to the params with the country code 'US'
         params['zip'] = f"{location},us"
