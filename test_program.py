@@ -9,7 +9,7 @@ def main():
 
 
     #Use a known city format, such as, "Austin,TX", or zip code "78669"
-    request_data = {"location": "97439"}
+    request_data = {"location": "97439"} #<== change "97439" to a city, state abbreviation (such as Portland,OR) or five digit zip code)
     socket.send_json(request_data)
     
 
