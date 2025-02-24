@@ -33,7 +33,7 @@ You may want to sign up for an API key from Open Weather Map, as well. Instructi
 
 **Example test client that I used:
 
-import zmq
+(import zmq
 
 def main():
     context = zmq.Context()
@@ -48,7 +48,7 @@ def main():
     print("Response from weather microservice:", response)
 
 if __name__ == "__main__":
-    main()
+    main())
 
 
 
